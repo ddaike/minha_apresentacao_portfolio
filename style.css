@@ -1,0 +1,242 @@
+:root {
+    --primary-color: #8CC0FF ;
+    --second-color: #FFC68C;
+    --second-buttom: #f79f48;
+    --bg-color: #F3EDE4;
+    --font-color: #252A4B;
+    --nav-height: 5rem;
+}
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+    */
+
+
+h1 {
+    font-family: "Tangerine", cursive;
+    font-size: 58px;
+}
+body {
+    width: 100%;
+    height: 100%;
+    color: var(--font-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    overflow: overlay;
+    font-size: 20px;
+}
+
+a{
+    color: var(--bg-color);
+    text-decoration: none;
+}
+
+nav {
+    color: var(--bg-color);
+    display: flex;
+    background-color: var(--primary-color);
+    height: var(--nav-height);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+
+}
+.envolve {
+    display: flex;
+    justify-content: space-around;
+}
+.menu {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    margin-left: 10px;
+    margin-right: 560px;
+    display: flex;
+    justify-content: flex-start;
+    width: 80px;
+    height: 80px;
+}
+
+.barramenu {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+
+}
+
+li {
+    
+    display: inline-block;
+    margin-right: 20px;
+    transition: text-decoration 0.5s ease-in;
+    position: relative;
+    text-decoration: none;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+li:hover::after {
+width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+
+    padding-block: 16rem;
+    width:auto;
+}
+
+.fase1 {
+    background-color: #dceef0;
+    padding-block: 7rem;
+    display: flex;
+    justify-content: space-around;
+}
+.paragrafo div{
+    width: 800px;
+    margin-right: 60px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragrafo2 div{
+    width: 800px;
+    margin-right: 20px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sobremim{
+    padding-block: 7rem;
+    background-color: aquargb(200, 255, 127);
+    display: flex;
+    justify-content: space-around;
+}
+
+.p {
+    height: 150px;
+    width: 280px;
+    font-size: 20px;
+}
+.bloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: var(--primary-color);
+    transition: transform 0.5s ease;
+    box-shadow: 5px 5px 10px #252A4B;
+
+}
+
+.bloco:hover {
+    transform: scale(1.05);
+
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 10px;              
+}
+.wrap div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+button {
+    background-color: var(--second-color);
+    font-size: 1.4rem;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 20px;
+    border-style: none;
+}
+
+button:hover {
+    background-color: var(--second-buttom);
+}
+
+.action button{
+    background-color: var(--second-color);
+    font-size: 1rem;
+    padding: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.action button:hover {
+    background-color: var(--second-buttom);
+}
+
+.fase2 {
+    background-color: #f0e9dc;
+    padding-block: 7rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.rodape{
+    background-color: var(--primary-color);
+    padding-block: 6rem;
+
+}
+
+#pracima{
+    background-color: var(--primary-color);
+    position: fixed;
+    padding: 26px;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    box-shadow: 3px 3px 15px #252A4B;
+}
+#pracima:hover {
+    background-color:var(--font-color);
+}
